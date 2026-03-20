@@ -1,0 +1,46 @@
+id: RE_EOR_10
+domain: RE
+section_family: EOR
+source_document: 10_gas_eor_methods.pdf
+title: Gas EOR Methods
+topic_number: 10
+status: complete
+pdf_file: 10_gas_eor_methods.pdf
+page_range_pdf:
+  - 1
+  - 22
+description: >
+  Газовые методы МУН: CO2, азот, углеводородные газы, растворители и
+  водогазовое воздействие. Охватывает miscible/immiscible displacement и MMP.
+keywords:
+  - gas EOR
+  - CO2 injection
+  - nitrogen injection
+  - hydrocarbon gas injection
+  - solvent injection
+  - WAG
+  - miscibility
+  - minimum miscibility pressure
+tasks:
+  - compare gas EOR options
+  - explain miscible versus immiscible displacement
+  - assess MMP-related applicability
+  - review WAG concept and limitations
+manuals_path: Manuals/
+calculations_path: Calculations/
+required_inputs:
+  - pressure
+  - temperature
+  - oil_composition
+  - gas_availability
+optional_inputs:
+  - MMP
+  - water_alternating_gas_plan
+  - injectivity
+  - conformance_risk
+tool_policy:
+  allow_calculations: false
+  allow_external_search: false
+  citation_required: true
+notes:
+  - Primary source for gas-based EOR and solvent-assisted displacement.

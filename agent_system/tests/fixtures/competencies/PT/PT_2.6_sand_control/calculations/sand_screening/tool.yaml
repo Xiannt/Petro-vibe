@@ -1,0 +1,15 @@
+id: sand_screening
+name: Sand Screening Calculator
+description: Fixture calculation tool for tests.
+entrypoint: main.py
+keywords:
+  - screening
+  - calculation
+  - расчет
+required_inputs:
+  - well_type
+  - production_rate
+optional_inputs:
+  - sand_rate_kg_day
+timeout_sec: 10
+enabled: true

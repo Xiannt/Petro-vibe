@@ -1,0 +1,45 @@
+id: PT_SC_3
+domain: PT
+section_family: Sand Control
+source_document: 03_sand_prediction_and_monitoring.pdf
+title: Sand Prediction and Monitoring
+topic_number: 3
+status: complete
+pdf_file: 03_sand_prediction_and_monitoring.pdf
+page_range_pdf:
+  - 1
+  - 22
+description: >
+  Прогноз пескопроявления и мониторинг: механическая прочность породы, тесты,
+  критерии пескообразования, транспорт песка и методы обнаружения/контроля.
+keywords:
+  - sand prediction
+  - rock strength
+  - sand failure
+  - laboratory testing
+  - sand transport
+  - monitoring
+  - acoustic detector
+  - erosion probe
+tasks:
+  - assess sanding risk
+  - choose monitoring technique
+  - explain rock strength and lab tests
+  - define monitoring and test program
+manuals_path: Manuals/
+calculations_path: null
+required_inputs:
+  - rock_mechanics_data
+  - completion_flow_regime
+optional_inputs:
+  - core_data
+  - calibration_tests
+  - sampling_capability
+  - facility_constraints
+tool_policy:
+  allow_calculations: false
+  allow_external_search: false
+  citation_required: true
+notes:
+  - Primary source for prediction, diagnostics, and monitoring logic.
+  - Do not use as the main source for gravel-pack execution details.

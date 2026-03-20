@@ -1,0 +1,86 @@
+id: RE_VOL_CALC_01
+domain: RE
+section_family: Volumetric
+source_script: volumetric.py
+callable_name: run
+title: Volumetric Oil Reserves Calculation
+topic_number: 1
+status: complete
+script_file: volumetric.py
+description: >
+  Расчет геологических и извлекаемых запасов нефти объемным методом на основе
+  площади залежи, эффективной нефтенасыщенной толщины, NTG, пористости,
+  нефтенасыщенности, плотности нефти, объемного коэффициента и коэффициента
+  извлечения. Скрипт также классифицирует месторождение по извлекаемым запасам.
+primary_intent:
+  - calculate_geological_reserves
+  - calculate_recoverable_reserves
+  - classify_field_by_recoverable_reserves
+secondary_intents:
+  - explain_formula_of_volumetric_method
+  - validate_inputs_for_volumetric_calculation
+  - explain_output_metrics
+excluded_topics:
+  - general_reservoir_classification_theory
+  - well_spacing_design
+  - development_system_selection
+  - external_benchmark_search
+keywords:
+  - volumetric calculation
+  - volumetric reserves estimation
+  - geological reserves
+  - recoverable reserves
+  - area net pay ntg porosity saturation
+  - oil density
+  - formation volume factor
+  - recovery factor
+  - field classification by reserves
+  - расчет запасов объемным методом
+  - геологические запасы
+  - извлекаемые запасы
+  - коэффициент извлечения
+  - объемный коэффициент нефти
+  - классификация месторождения
+tasks:
+  - calculate reserves from user inputs
+  - explain the volumetric formula step by step
+  - convert inputs into geological and recoverable reserves
+  - classify a field after reserves estimation
+  - check whether provided input values are sufficient
+required_inputs:
+  - area_km2
+  - net_pay_m
+  - ntg
+  - porosity
+  - oil_saturation
+  - oil_density_t_m3
+  - formation_volume_factor
+  - recovery_factor
+optional_inputs:
+  - field_name
+  - reservoir_name
+  - uncertainty_ranges
+  - comments_on_assumptions
+outputs:
+  - geological_reserves_t
+  - recoverable_reserves_t
+  - recoverable_reserves_mln_t
+  - classification
+formula_summary:
+  - area_m2 = area_km2 * 1000000
+  - bulk_rock_volume_m3 = area_m2 * net_pay_m
+  - pore_volume_m3 = bulk_rock_volume_m3 * ntg * porosity
+  - oil_volume_reservoir_m3 = pore_volume_m3 * oil_saturation
+  - oil_volume_surface_m3 = oil_volume_reservoir_m3 / formation_volume_factor
+  - geological_reserves_t = oil_volume_surface_m3 * oil_density_t_m3
+  - recoverable_reserves_t = geological_reserves_t * recovery_factor
+  - recoverable_reserves_mln_t = recoverable_reserves_t / 1000000
+tool_policy:
+  allow_calculations: true
+  allow_external_search: false
+  citation_required: false
+notes:
+  - Expected fractions must be provided in decimal form, for example porosity 0.22.
+  - formation_volume_factor must be greater than zero.
+  - recovery_factor is applied to geological reserves to estimate recoverable reserves.
+  - Classification thresholds in the script are defined in million tons.

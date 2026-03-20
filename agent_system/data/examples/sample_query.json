@@ -1,0 +1,10 @@
+{
+  "query": "Подобрать метод для контроля пескопроявления",
+  "context": {
+    "well_type": "horizontal",
+    "production_rate": 100,
+    "reservoir_strength": "weak",
+    "completion_constraints": "limited workover window"
+  },
+  "response_mode": "user"
+}

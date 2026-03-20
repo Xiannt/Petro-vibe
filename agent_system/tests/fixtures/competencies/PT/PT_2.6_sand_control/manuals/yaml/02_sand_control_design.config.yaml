@@ -1,0 +1,35 @@
+id: PT_SC_2
+domain: PT
+section_family: Sand Control
+source_document: Fixture Sand Control Manual.pdf
+title: Sand Control Design
+topic_number: 2
+status: complete
+pdf_file: 02_sand_control_design.pdf
+page_range_pdf:
+  - 18
+  - 33
+description: Method selection, productivity impairment, and design-basis data requirements.
+keywords:
+  - sand control design
+  - method selection
+  - screen
+  - gravel pack
+  - chemical consolidation
+tasks:
+  - select sand control method
+  - compare methods
+required_inputs:
+  - reservoir_strength
+  - production_rate
+  - completion_constraints
+optional_inputs:
+  - economics
+tool_policy:
+  allow_calculations: true
+  allow_external_search: false
+  citation_required: true
+summary_excerpt: Screen, gravel pack, and chemical consolidation should be compared against productivity and intervention constraints.
+priority: 2
+notes:
+  - Fixture metadata for unit tests.

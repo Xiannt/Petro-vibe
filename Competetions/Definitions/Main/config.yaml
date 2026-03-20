@@ -1,0 +1,43 @@
+id: DEF_MAIN
+domain: Definitions
+title: Main Definitions
+description: >
+  База кратких определений терминов и базовых понятий. Используется только для
+  точечных запросов формата "что такое" / "дай определение", без инженерных
+  расчетов и без смешения с тематическими разделами.
+keywords:
+  - определение
+  - термин
+  - что такое
+  - дай определение
+  - glossary
+manuals_path: Manuals
+manuals_yaml_path: Manuals/yaml
+calculations_path: Calculations
+templates_path: Templates
+tests_path: Tests
+supported_tasks:
+  - term_definition
+  - glossary_lookup
+required_inputs:
+  - term_or_phrase
+optional_inputs:
+  - domain_hint
+  - language
+calculation_triggers: []
+priority_sources:
+  - DEF_MAIN_01
+citation_required: true
+allow_calculations: false
+retrieval_mode: hybrid
+vector_collection_name: definitions_main
+embedding_provider: hash
+chunking:
+  strategy: paragraph
+  chunk_size: 180
+  overlap: 20
+llm_routing_enabled: true
+llm_routing_model: gpt-4.1-mini
+retrieval_top_k: 4
+rerank_top_n: 3
+shortlist_size: 2

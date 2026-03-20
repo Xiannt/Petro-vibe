@@ -1,0 +1,65 @@
+id: RE_VOL_00
+domain: RE
+section_family: Volumetric
+source_document: 00_reservoir_classification_and_development_basics.pdf
+title: Reservoir Classification and Development Basics
+topic_number: 0
+status: complete
+pdf_file: 00_reservoir_classification_and_development_basics.pdf
+page_range_pdf:
+  - 1
+  - 34
+description: >
+  Справочный материал по классификации залежей и коллекторов, базовым
+  петрофизическим свойствам, стадиям освоения и технологическим показателям.
+  Используется как теоретическая база для интерпретации входных параметров
+  объемного метода, но не заменяет сам расчетный алгоритм.
+primary_intent:
+  - explain_reservoir_classification
+  - explain_petrophysical_inputs_for_volumetric_method
+  - explain_development_basics_relevant_to_reserves_estimation
+secondary_intents:
+  - explain_porosity_and_permeability
+  - explain_ntg_and_reservoir_quality
+  - explain_field_development_stages
+excluded_topics:
+  - perform_volumetric_calculation
+  - calculate_geological_reserves
+  - calculate_recoverable_reserves
+  - execute_python_script
+keywords:
+  - reservoir classification
+  - reservoir types
+  - porosity
+  - permeability
+  - reservoir properties
+  - development systems
+  - well spacing
+  - development stages
+  - petrophysical basis for volumetric method
+  - классификация залежей
+  - свойства коллекторов
+  - пористость
+  - проницаемость
+  - песчанистость
+  - основы разработки
+tasks:
+  - explain reservoir classification for reserves evaluation
+  - explain porosity permeability and NTG in simple terms
+  - identify geological concepts needed before volumetric estimation
+  - provide theoretical context for reserves classification
+manuals_path: Manuals/
+calculations_path: Calculations/
+required_inputs:
+  - user_question
+optional_inputs:
+  - field_context
+  - reservoir_context
+  - target_parameter
+tool_policy:
+  allow_calculations: false
+  allow_external_search: false
+  citation_required: true
+notes:
+  - Use this document for theory and terminology only.
+  - Route explicit reserve calculations to the dedicated volumetric calculation YAML.

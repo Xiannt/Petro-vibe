@@ -1,0 +1,45 @@
+id: RE_EOR_09
+domain: RE
+section_family: EOR
+source_document: 09_heavy_oil_thermal_methods.pdf
+title: Heavy Oil and Thermal EOR
+topic_number: 9
+status: complete
+pdf_file: 09_heavy_oil_thermal_methods.pdf
+page_range_pdf:
+  - 1
+  - 28
+description: >
+  Разработка залежей высоковязкой нефти и тепловые методы: горячая вода, пар,
+  внутрипластовое горение и оценка температурного поля.
+keywords:
+  - thermal EOR
+  - heavy oil
+  - viscous oil
+  - steam injection
+  - hot water injection
+  - in situ combustion
+  - CHOPS
+tasks:
+  - explain heavy-oil development options
+  - compare thermal EOR methods
+  - identify when thermal methods are justified
+  - review thermal design considerations
+manuals_path: Manuals/
+calculations_path: Calculations/
+required_inputs:
+  - oil_viscosity
+  - depth
+  - reservoir_temperature
+  - pay_thickness
+optional_inputs:
+  - heat_loss_estimates
+  - steam_quality
+  - sand_risk
+  - horizontal_well_option
+tool_policy:
+  allow_calculations: false
+  allow_external_search: false
+  citation_required: true
+notes:
+  - Use only for heavy-oil / thermal topics, not for generic gas or chemical EOR.

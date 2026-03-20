@@ -1,0 +1,41 @@
+id: RE_EOR_13
+domain: RE
+section_family: Special Reservoir Development
+source_document: 13_gas_and_condensate_field_development.pdf
+title: Gas-Oil and Gas-Condensate Field Development
+topic_number: 13
+status: complete
+pdf_file: 13_gas_and_condensate_field_development.pdf
+page_range_pdf:
+  - 1
+  - 17
+description: >
+  Особенности разработки газонефтяных и нефтегазоконденсатных месторождений,
+  включая нефтяные оторочки, газовые шапки, конденсат и риски конусообразования.
+keywords:
+  - gas condensate field
+  - gas oil field
+  - oil rim
+  - gas cap
+  - condensate factor
+  - coning
+  - NGKM
+tasks:
+  - explain development challenges of gas-condensate systems
+  - review oil-rim production issues
+  - summarize key development options and constraints
+manuals_path: Manuals/
+calculations_path: Calculations/
+required_inputs:
+  - reservoir_structure
+  - fluid_system
+optional_inputs:
+  - gas_cap_size
+  - oil_rim_thickness
+  - pressure_maintenance_strategy
+tool_policy:
+  allow_calculations: false
+  allow_external_search: false
+  citation_required: true
+notes:
+  - This is a special-reservoir-development topic, not a classical EOR method chapter.

@@ -1,0 +1,61 @@
+id: PT_2.6
+domain: PT
+title: Sand Control
+description: >
+  Компетенция по управлению выносом песка: причины, критерии необходимости
+  пескоконтроля, выбор метода, прогноз пескопроявления, мониторинг и основы
+  gravel pack. Конфиг разделен по источникам так, чтобы темы не пересекались.
+keywords:
+  - sand control
+  - sand production
+  - sand management
+  - sand prediction
+  - sand monitoring
+  - gravel pack
+  - screen completion
+manuals_path: Manuals
+manuals_yaml_path: Manuals/yaml
+calculations_path: Calculations
+templates_path: Templates
+tests_path: Tests
+supported_tasks:
+  - explain_need_for_sand_control
+  - select_sand_control_method
+  - assess_sand_failure_risk
+  - choose_monitoring_method
+  - review_gravel_pack_basics
+required_inputs:
+  - reservoir_type
+  - completion_type
+  - production_conditions
+optional_inputs:
+  - rock_strength_data
+  - depletion_forecast
+  - facility_sand_tolerance
+  - workover_constraints
+  - artificial_lift_constraints
+calculation_triggers:
+  - calculate
+  - расчет
+  - sand rate
+  - drawdown window
+  - monitoring threshold
+priority_sources:
+  - PT_SC_1
+  - PT_SC_2
+  - PT_SC_3
+  - PT_SC_4A
+citation_required: true
+allow_calculations: true
+retrieval_mode: hybrid
+vector_collection_name: pt_2_6_sand_control
+embedding_provider: hash
+chunking:
+  strategy: paragraph
+  chunk_size: 220
+  overlap: 40
+llm_routing_enabled: true
+llm_routing_model: gpt-4.1-mini
+retrieval_top_k: 6
+rerank_top_n: 5
+shortlist_size: 4

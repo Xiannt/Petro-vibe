@@ -1,0 +1,43 @@
+id: PT_SC_1
+domain: PT
+section_family: Sand Control
+source_document: 01_requirement_for_sand_control.txt
+title: Requirement for Sand Control
+topic_number: 1
+status: complete
+pdf_file: 01_requirement_for_sand_control.txt
+page_range_pdf:
+  - 1
+  - 100
+description: >
+  Обоснование необходимости пескоконтроля: масштаб проблемы, последствия выноса
+  песка, экономические эффекты, роль appraisal и интегрированного sand
+  management.
+keywords:
+  - need for sand control
+  - sand management philosophy
+  - extent of sand production
+  - cost of sand control
+  - appraisal phase
+  - integrated approach
+tasks:
+  - explain why sand control is needed
+  - summarize business and integrity risks
+  - describe appraisal and decision workflow
+  - outline integrated sand management
+manuals_path: Manuals/
+calculations_path: null
+required_inputs:
+  - field_context
+  - development_stage
+optional_inputs:
+  - production_philosophy
+  - facility_sand_tolerance
+  - remedial_cost_context
+tool_policy:
+  allow_calculations: false
+  allow_external_search: false
+  citation_required: true
+notes:
+  - Scope limited to rationale, lifecycle decisions, and management process.
+  - Do not use as the primary source for detailed design or monitoring selection.

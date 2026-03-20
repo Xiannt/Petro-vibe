@@ -1,0 +1,43 @@
+id: RE_EOR_11
+domain: RE
+section_family: EOR
+source_document: 11_foam_applications.pdf
+title: Foam Applications in Reservoirs
+topic_number: 11
+status: complete
+pdf_file: 11_foam_applications.pdf
+page_range_pdf:
+  - 1
+  - 11
+description: >
+  Свойства пены в пористой среде, механизмы устойчивости и разрушения, а также
+  применение пен для выравнивания профиля вытеснения и управления подвижностью.
+keywords:
+  - foam
+  - foam flooding
+  - mobility control
+  - profile modification
+  - lamella
+  - foam stability
+  - porous media
+tasks:
+  - explain foam behavior in porous media
+  - describe foam stability and destruction mechanisms
+  - assess where foam can improve sweep efficiency
+  - summarize mobility-control applications
+manuals_path: Manuals/
+calculations_path: Calculations/
+required_inputs:
+  - displacement_problem
+  - heterogeneity_description
+optional_inputs:
+  - gas_type
+  - surfactant_system
+  - oil_viscosity
+  - steam_or_WAG_context
+tool_policy:
+  allow_calculations: false
+  allow_external_search: false
+  citation_required: true
+notes:
+  - Specialized source for foam; do not use as a substitute for the broader gas EOR chapter.

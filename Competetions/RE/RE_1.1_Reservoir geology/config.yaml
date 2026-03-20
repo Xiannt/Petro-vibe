@@ -1,0 +1,59 @@
+id: RE_1.1
+domain: RE
+title: Reservoir Geology
+description: >
+  Классификация коллекторов, базовые геолого-физические свойства, показатели
+  разработки, системы размещения скважин и стадии разработки месторождения.
+keywords:
+  - reservoir classification
+  - reservoir geology
+  - porosity
+  - permeability
+  - development stages
+  - well spacing
+  - geological model
+manuals_path: Manuals
+manuals_yaml_path: Manuals/yaml
+calculations_path: Calculations
+templates_path: Templates
+tests_path: Tests
+supported_tasks:
+  - classify_reservoir
+  - explain_petrophysical_properties
+  - estimate_development_indicators
+  - select_well_pattern
+required_inputs:
+  - field_name
+  - reservoir_name
+  - structural_maps
+  - well_data
+  - petrophysical_interpretation
+optional_inputs:
+  - seismic_data
+  - core_data
+  - facies_model
+  - pressure_data
+  - analog_fields
+  - uncertainty_ranges
+calculation_triggers:
+  - calculate
+  - расчет
+  - porosity
+  - permeability
+  - development indicator
+priority_sources:
+  - RE_RG_00
+citation_required: true
+allow_calculations: true
+retrieval_mode: hybrid
+vector_collection_name: re_1_1_reservoir_geology
+embedding_provider: hash
+chunking:
+  strategy: paragraph
+  chunk_size: 220
+  overlap: 40
+llm_routing_enabled: true
+llm_routing_model: gpt-4.1-mini
+retrieval_top_k: 6
+rerank_top_n: 5
+shortlist_size: 3

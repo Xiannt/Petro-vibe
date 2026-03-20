@@ -1,0 +1,46 @@
+id: RE_EOR_08
+domain: RE
+section_family: EOR
+source_document: 08_chemical_eor.pdf
+title: Chemical EOR
+topic_number: 8
+status: complete
+pdf_file: 08_chemical_eor.pdf
+page_range_pdf:
+  - 1
+  - 28
+description: >
+  Химические методы увеличения нефтеотдачи: ПАВ, щелочное и полимерное
+  заводнение, мицеллярные системы, комплексные химические технологии и базовые
+  расчетные показатели.
+keywords:
+  - chemical EOR
+  - surfactant flooding
+  - alkaline flooding
+  - polymer flooding
+  - micellar flooding
+  - capillary number
+  - chemical slug
+tasks:
+  - explain chemical EOR mechanisms
+  - compare surfactant alkaline and polymer flooding
+  - select chemical flooding option
+  - review screening parameters and design indicators
+manuals_path: Manuals/
+calculations_path: Calculations/
+required_inputs:
+  - oil_properties
+  - water_salinity
+  - rock_wettability
+  - permeability
+optional_inputs:
+  - capillary_number
+  - adsorption_risk
+  - injectivity_data
+  - laboratory_coreflood_results
+tool_policy:
+  allow_calculations: false
+  allow_external_search: false
+  citation_required: true
+notes:
+  - Scope limited to chemical methods and related screening/design logic.

@@ -1,0 +1,82 @@
+id: RE_5.1
+domain: RE
+title: Volumetric Reserves Estimation
+description: >
+  Компетенция по подсчету геологических и извлекаемых запасов нефти
+  объемным методом. Покрывает базовые принципы классификации запасов и
+  месторождений, а также расчет по площади, эффективной толщине, NTG,
+  пористости, нефтенасыщенности, объемному коэффициенту, плотности нефти
+  и коэффициенту извлечения.
+keywords:
+  - volumetric
+  - volumetric reserves
+  - volumetric method
+  - reserves estimation
+  - oil in place
+  - geological reserves
+  - recoverable reserves
+  - STOIIP
+  - подсчет запасов
+  - расчитай запасы
+  - запасы месторождения
+  - объемный метод
+  - геологические запасы
+  - извлекаемые запасы
+  - классификация месторождений
+manuals_path: Manuals
+manuals_yaml_path: Manuals/yaml
+calculations_path: Calculations
+templates_path: Templates
+tests_path: Tests
+supported_tasks:
+  - explain_volumetric_method
+  - identify_required_inputs_for_volumetric_estimation
+  - calculate_geological_reserves
+  - calculate_recoverable_reserves
+  - classify_field_by_recoverable_reserves
+  - explain_uncertainties_in_volumetric_estimation
+required_inputs:
+  - area_km2
+  - net_pay_m
+  - ntg
+  - porosity
+  - oil_saturation
+  - oil_density_t_m3
+  - formation_volume_factor
+  - recovery_factor
+optional_inputs:
+  - field_name
+  - reservoir_name
+  - contour_type
+  - uncertainty_ranges
+  - analog_fields
+  - source_maps
+  - petrophysical_summary
+calculation_triggers:
+  - объемный метод
+  - volumetric
+  - volumetric method
+  - подсчет запасов
+  - рассчитать запасы
+  - расчитай запасы
+  - рассчитать запасы месторождения
+  - geological reserves
+  - recoverable reserves
+  - STOIIP
+priority_sources:
+  - RE_VOL_00
+  - RE_VOL_CALC_01
+citation_required: true
+allow_calculations: true
+retrieval_mode: hybrid
+vector_collection_name: re_5_1_volumetric
+embedding_provider: hash
+chunking:
+  strategy: paragraph
+  chunk_size: 220
+  overlap: 40
+llm_routing_enabled: true
+llm_routing_model: gpt-4.1-mini
+retrieval_top_k: 6
+rerank_top_n: 5
+shortlist_size: 3

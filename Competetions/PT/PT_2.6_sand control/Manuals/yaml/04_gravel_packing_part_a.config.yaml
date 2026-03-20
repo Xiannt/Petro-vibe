@@ -1,0 +1,45 @@
+id: PT_SC_4A
+domain: PT
+section_family: Sand Control
+source_document: 04_gravel_packing_part_a.pdf
+title: Gravel Packing - Part A
+topic_number: 4
+status: partial_from_source_pdf
+pdf_file: 04_gravel_packing_part_a.pdf
+page_range_pdf:
+  - 1
+  - 22
+description: >
+  Базовые принципы gravel pack и доступная часть темы по cased-hole / open-hole
+  решениям, компоновкам, перфорации и операционным ограничениям.
+keywords:
+  - gravel packing
+  - CHGP
+  - OHGP
+  - frac pack
+  - perforating
+  - pack assembly
+  - cased-hole gravel pack
+tasks:
+  - explain gravel pack fundamentals
+  - compare CHGP and OHGP
+  - summarize perforating requirements
+  - review available gravel-pack techniques
+manuals_path: Manuals/
+calculations_path: null
+required_inputs:
+  - completion_type
+  - well_geometry
+  - formation_characteristics
+optional_inputs:
+  - zone_length
+  - deviation
+  - fracture_pressure
+  - service_company_constraints
+tool_policy:
+  allow_calculations: false
+  allow_external_search: false
+  citation_required: true
+notes:
+  - Partial topic only; source file does not contain the full gravel-pack chapter.
+  - Use only for fundamentals and techniques covered in the available pages.

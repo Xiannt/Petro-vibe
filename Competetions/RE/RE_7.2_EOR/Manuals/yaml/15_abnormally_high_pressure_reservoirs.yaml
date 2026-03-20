@@ -1,0 +1,41 @@
+id: RE_EOR_15
+domain: RE
+section_family: Special Reservoir Development
+source_document: 15_abnormally_high_pressure_reservoirs.pdf
+title: Deep Reservoirs with Abnormally High Pressure
+topic_number: 15
+status: complete
+pdf_file: 15_abnormally_high_pressure_reservoirs.pdf
+page_range_pdf:
+  - 1
+  - 7
+description: >
+  Разработка глубокозалегающих пластов с аномально высоким пластовым давлением:
+  напряженное состояние, деформации породы, изменение пористости и
+  проницаемости при снижении давления.
+keywords:
+  - abnormally high reservoir pressure
+  - deep reservoir
+  - geostatic pressure
+  - stress state
+  - porosity change
+  - permeability change
+tasks:
+  - explain AHFP reservoir behavior
+  - review geomechanical implications of pressure depletion
+  - summarize development risks and constraints
+manuals_path: Manuals/
+calculations_path: Calculations/
+required_inputs:
+  - depth
+  - pressure_context
+optional_inputs:
+  - rock_mechanics
+  - depletion_plan
+  - reservoir_type
+tool_policy:
+  allow_calculations: false
+  allow_external_search: false
+  citation_required: true
+notes:
+  - Special topic focused on pressure and rock-mechanics behavior.

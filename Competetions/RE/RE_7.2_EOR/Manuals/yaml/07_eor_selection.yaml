@@ -1,0 +1,41 @@
+id: RE_EOR_07
+domain: RE
+section_family: EOR
+source_document: 07_eor_selection.pdf
+title: EOR Selection Criteria
+topic_number: 7
+status: complete
+pdf_file: 07_eor_selection.pdf
+page_range_pdf:
+  - 1
+  - 9
+description: >
+  Определение МУН/EOR, классификация методов и базовые критерии выбора метода
+  увеличения нефтеотдачи.
+keywords:
+  - методы увеличения нефтеотдачи
+  - МУН
+  - EOR
+  - классификация МУН
+  - критерии выбора МУН
+  - enhanced oil recovery
+tasks:
+  - дать определение МУН
+  - классифицировать методы EOR
+  - объяснить критерии выбора метода
+  - выполнить первичный screening
+manuals_path: Manuals/
+calculations_path: Calculations/
+required_inputs:
+  - user_question
+optional_inputs:
+  - reservoir_context
+  - user_goal
+tool_policy:
+  allow_calculations: false
+  allow_external_search: false
+  citation_required: true
+notes:
+  - Use as the general entry point for EOR terminology and high-level selection.
+  - Do not use for detailed design of a specific method family.
+preferred_for_definition: true

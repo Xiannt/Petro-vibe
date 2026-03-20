@@ -1,0 +1,39 @@
+id: RE_EOR_12
+domain: RE
+section_family: EOR
+source_document: 12_microbiological_eor.pdf
+title: Microbiological EOR
+topic_number: 12
+status: complete
+pdf_file: 12_microbiological_eor.pdf
+page_range_pdf:
+  - 1
+  - 3
+description: >
+  Микробиологические методы увеличения нефтеотдачи: типы микроорганизмов,
+  механизмы действия, схемы закачки и ограничения метода.
+keywords:
+  - microbiological EOR
+  - MEOR
+  - microorganisms
+  - biosurfactants
+  - molasses
+  - microbial flooding
+tasks:
+  - explain microbiological EOR mechanism
+  - summarize injection schemes
+  - identify main benefits and risks
+manuals_path: Manuals/
+calculations_path: Calculations/
+required_inputs:
+  - reservoir_context
+optional_inputs:
+  - salinity
+  - waterflood_maturity
+  - microbiology_constraints
+tool_policy:
+  allow_calculations: false
+  allow_external_search: false
+  citation_required: true
+notes:
+  - Short overview source; use for concept explanation and applicability limits.

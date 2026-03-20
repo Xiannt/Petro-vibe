@@ -1,0 +1,76 @@
+id: RE_7.2
+domain: RE
+title: Enhanced Oil Recovery and Special Reservoir Development
+description: >
+  Компетенция по МУН/EOR и близким специальным темам: критерии выбора,
+  химические, тепловые, газовые и микробиологические методы, пены, а также
+  особенности разработки газоконденсатных, карбонатных и АВПД-пластов.
+  Источники разведены по темам, чтобы не было пересечения между файлами.
+keywords:
+  - EOR
+  - МУН
+  - enhanced oil recovery
+  - chemical EOR
+  - thermal EOR
+  - gas EOR
+  - foam
+  - microbiological EOR
+  - carbonate reservoir
+  - abnormal reservoir pressure
+manuals_path: Manuals
+manuals_yaml_path: Manuals/yaml
+calculations_path: Calculations
+templates_path: Templates
+tests_path: Tests
+supported_tasks:
+  - define_eor
+  - screen_eor_method
+  - review_chemical_eor
+  - review_thermal_eor
+  - review_gas_eor
+  - review_foam_application
+  - review_microbiological_eor
+  - review_special_reservoir_development
+required_inputs:
+  - reservoir_type
+  - fluid_properties
+  - production_history
+optional_inputs:
+  - injectivity_data
+  - pressure_data
+  - laboratory_tests
+  - economic_constraints
+  - facility_constraints
+  - pilot_results
+calculation_triggers:
+  - calculate
+  - расчет
+  - screening
+  - mobility ratio
+  - capillary number
+  - MMP
+  - steam
+priority_sources:
+  - RE_EOR_07
+  - RE_EOR_08
+  - RE_EOR_09
+  - RE_EOR_10
+  - RE_EOR_11
+  - RE_EOR_12
+  - RE_EOR_13
+  - RE_EOR_14
+  - RE_EOR_15
+citation_required: true
+allow_calculations: true
+retrieval_mode: hybrid
+vector_collection_name: re_7_2_eor
+embedding_provider: hash
+chunking:
+  strategy: paragraph
+  chunk_size: 220
+  overlap: 40
+llm_routing_enabled: true
+llm_routing_model: gpt-4.1-mini
+retrieval_top_k: 7
+rerank_top_n: 6
+shortlist_size: 5

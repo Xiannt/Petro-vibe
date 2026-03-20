@@ -1,0 +1,40 @@
+id: RE_EOR_14
+domain: RE
+section_family: Special Reservoir Development
+source_document: 14_carbonate_reservoir_development.pdf
+title: Carbonate Reservoir Development
+topic_number: 14
+status: complete
+pdf_file: 14_carbonate_reservoir_development.pdf
+page_range_pdf:
+  - 1
+  - 16
+description: >
+  Особенности разработки карбонатных коллекторов: типы пустотного пространства,
+  трещинность, неоднородность, заводнение и применимость методов воздействия.
+keywords:
+  - carbonate reservoir
+  - fractured carbonate
+  - pore fracture cavern system
+  - carbonate flooding
+  - waterflood in carbonates
+  - wettability
+tasks:
+  - explain carbonate reservoir classes
+  - review development risks in carbonates
+  - summarize flooding and EOR considerations for carbonates
+manuals_path: Manuals/
+calculations_path: Calculations/
+required_inputs:
+  - reservoir_description
+  - void_space_type
+optional_inputs:
+  - fracture_characterization
+  - wettability
+  - flooding_history
+tool_policy:
+  allow_calculations: false
+  allow_external_search: false
+  citation_required: true
+notes:
+  - Use for carbonate-specific development behavior and method applicability.

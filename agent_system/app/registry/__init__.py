@@ -1,0 +1,1 @@
+"""Competency discovery and registry."""

@@ -1,0 +1,47 @@
+id: PT_SC_2
+domain: PT
+section_family: Sand Control
+source_document: 02_sand_control_design.pdf
+title: Sand Control Design
+topic_number: 2
+status: complete
+pdf_file: 02_sand_control_design.pdf
+page_range_pdf:
+  - 1
+  - 16
+description: >
+  Выбор стратегии пескоконтроля и design basis: когда контролировать песок,
+  как сопоставлять методы, какие исходные данные нужны и как учитывать потери
+  продуктивности.
+keywords:
+  - sand control design
+  - design basis
+  - method selection
+  - productivity impairment
+  - deferred sand control
+  - screen
+  - gravel pack
+  - chemical consolidation
+tasks:
+  - select sand control strategy
+  - justify immediate vs deferred control
+  - list design inputs
+  - compare candidate sand control methods
+manuals_path: Manuals/
+calculations_path: null
+required_inputs:
+  - reservoir_data
+  - completion_data
+  - production_targets
+optional_inputs:
+  - economics
+  - depletion_forecast
+  - breakthrough_risk
+  - intervention_constraints
+tool_policy:
+  allow_calculations: false
+  allow_external_search: false
+  citation_required: true
+notes:
+  - Primary source for method selection and design-basis discussions.
+  - Keep separate from prediction/monitoring and gravel-pack execution details.

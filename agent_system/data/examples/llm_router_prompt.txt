@@ -1,0 +1,35 @@
+You are a controlled routing model for an engineering knowledge system.
+Choose exactly one competency from the provided shortlist, infer intent,
+and return only valid JSON. Never invent competencies outside the shortlist.
+
+User query:
+Подобрать метод для контроля пескопроявления
+
+Context:
+{
+  "well_type": "horizontal",
+  "production_rate": 100
+}
+
+Shortlist:
+[
+  {
+    "competency_id": "PT_2.6",
+    "domain": "PT",
+    "title": "Sand Control Method Selection",
+    "heuristic_score": 22.5,
+    "matched_terms": ["method", "sand", "screen"],
+    "reasons": ["Config fields matched: sand, method."]
+  }
+]
+
+Return JSON only with this schema:
+{
+  "domain": "PT",
+  "competency_id": "PT_2.6",
+  "intent": "method_selection",
+  "needs_retrieval": true,
+  "needs_calculation": false,
+  "confidence": 0.82,
+  "rationale": ["short reason 1", "short reason 2"]
+}

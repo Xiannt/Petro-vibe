@@ -1,0 +1,39 @@
+id: DEF_MAIN_01
+domain: Definitions
+section_family: Main Definitions
+source_document: 01_main.pdf
+title: Метод увеличения нефтеотдачи - определение
+topic_number: 1
+status: complete
+pdf_file: 01_main.pdf
+page_range_pdf:
+  - 1
+  - 1
+description: >
+  Короткое определение термина "метод увеличения нефтеотдачи" (EOR/МУН).
+  Источник подходит только для справочного ответа-определения и не должен
+  использоваться как основной источник для выбора конкретной технологии.
+keywords:
+  - метод увеличения нефтеотдачи
+  - МУН
+  - EOR
+  - определение МУН
+  - что такое МУН
+tasks:
+  - дать определение термина
+  - расшифровать аббревиатуру
+  - ответить что такое МУН
+manuals_path: Manuals/
+calculations_path: null
+required_inputs:
+  - term_or_phrase
+optional_inputs:
+  - language
+  - domain_hint
+tool_policy:
+  allow_calculations: false
+  allow_external_search: false
+  citation_required: true
+notes:
+  - Single-page glossary entry.
+  - Do not use for method screening, design, or performance evaluation.

@@ -1,0 +1,49 @@
+{
+  "domain": "PT",
+  "competency_id": "PT_2.6",
+  "intent": "method_selection",
+  "routing_mode": "heuristic",
+  "confidence": 0.84,
+  "answer": {
+    "recommendation": "Для запроса в компетенции PT_2.6 manuals указывают, что выбор метода sand control должен сравнивать screen, gravel pack и chemical consolidation с учетом production rate, completion constraints и ожидаемого sanding risk.",
+    "justification": [
+      "Method selection should compare screen, gravel pack, and chemical consolidation. [Sand Control Design, p. 18]",
+      "Design basis must include production rate, completion constraints, and reservoir strength. [Sand Control Design, p. 18]"
+    ],
+    "used_sources": [
+      {
+        "document_id": "PT_SC_2",
+        "document_title": "Sand Control Design",
+        "section_title": "Sand Control Design",
+        "pages": [18],
+        "page_reference": "p. 18"
+      }
+    ],
+    "calculations_run": [],
+    "limitations": [
+      "Финальный выбор метода остается предварительным до уточнения недостающих инженерных параметров."
+    ],
+    "missing_inputs": [
+      "facility_sand_tolerance",
+      "depletion_forecast",
+      "workover_constraints"
+    ]
+  },
+  "evidence": {
+    "claims": [
+      {
+        "claim_id": "PT_2.6:PT_SC_2:0:claim:0",
+        "claim_text": "Method selection should compare screen, gravel pack, and chemical consolidation.",
+        "document_id": "PT_SC_2",
+        "document_title": "Sand Control Design",
+        "section_title": "Sand Control Design",
+        "pages": [18],
+        "page_reference": "p. 18",
+        "relevance_reason": "Defines method selection criteria from the manual.",
+        "claim_type": "selection_criteria",
+        "supporting_chunk_id": "PT_2.6:PT_SC_2:0"
+      }
+    ]
+  },
+  "debug_trace": null
+}

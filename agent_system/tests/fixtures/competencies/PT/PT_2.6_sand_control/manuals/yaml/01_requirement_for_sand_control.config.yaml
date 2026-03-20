@@ -1,0 +1,32 @@
+id: PT_SC_1
+domain: PT
+section_family: Sand Control
+source_document: Fixture Sand Control Manual.pdf
+title: Requirement for Sand Control
+topic_number: 1
+status: complete
+pdf_file: 01_requirement_for_sand_control.pdf
+page_range_pdf:
+  - 8
+  - 17
+description: Why sand control is needed and which appraisal inputs are required.
+keywords:
+  - sand control
+  - requirement
+  - appraisal
+tasks:
+  - explain need for sand control
+  - summarize appraisal inputs
+required_inputs:
+  - field_context
+  - well_type
+optional_inputs:
+  - reservoir_pressure_forecast
+tool_policy:
+  allow_calculations: false
+  allow_external_search: false
+  citation_required: true
+summary_excerpt: Sand management starts from understanding sanding risk, well type, and operating philosophy.
+priority: 1
+notes:
+  - Fixture metadata for unit tests.

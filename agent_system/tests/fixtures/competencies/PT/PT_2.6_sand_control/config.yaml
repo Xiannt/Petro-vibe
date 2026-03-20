@@ -1,0 +1,42 @@
+id: PT_2.6
+domain: PT
+title: Sand Control Method Selection
+description: Competency fixture for method selection and sand-control screening.
+keywords:
+  - sand control
+  - sand production
+  - method selection
+  - screen
+  - gravel pack
+manuals_path: manuals
+manuals_yaml_path: manuals/yaml
+calculations_path: calculations
+templates_path: templates
+tests_path: tests
+supported_tasks:
+  - method_selection
+  - design_basis
+required_inputs:
+  - well_type
+  - production_rate
+  - reservoir_strength
+calculation_triggers:
+  - calculate
+  - расчет
+  - screening
+priority_sources:
+  - PT_SC_2
+citation_required: true
+allow_calculations: true
+retrieval_mode: hybrid
+vector_collection_name: pt_2_6_fixture
+embedding_provider: hash
+chunking:
+  strategy: paragraph
+  chunk_size: 80
+  overlap: 20
+llm_routing_enabled: true
+llm_routing_model: gpt-4.1-mini
+retrieval_top_k: 4
+rerank_top_n: 3
+shortlist_size: 2
